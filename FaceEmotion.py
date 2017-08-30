@@ -54,39 +54,6 @@ class FaceEmotion(object):
 	def on_face_emotion(self, emotion):
 		self.mem().raiseEvent("Ginger/faceEmotion", emotion)
 	
-	"""def on_user_values(self, user_values):
-		self.mem().raiseEvent("Ginger/faceExpression", user_values)
-		return
-
-	def get_user_values(self, emotion):
-		extraversion = 0.5
-		if emotion == "sadness":
-			valence = -0.5
-			arousal = -0.5
-		elif emotion == "happiness":
-			valence = 0.75
-			arousal = 0.25
-		elif emotion == "contempt": #TO BE DEFINED
-			valence = 0.0
-			arousal = 0.0
-		elif emotion == "disgust": #TO BE DEFINED
-			valence = 0.0
-			arousal = 0.0
-		elif emotion == "anger":
-			valence = -0.5
-			arousal = 0.5
-		elif emotion == "surprise":
-			valence = 0.25
-			arousal = 0.75
-		elif emotion == "fear": #TO BE DEFINED
-			valence = 0.0
-			arousal = 0.0
-		else: #emotion == "neutral"
-			valence = 0.0
-			arousal = 0.0
-		user_values = [valence, arousal, extraversion]
-		return user_values"""
-		
 	def get_emotion(self, data):
 		try:
 			scores = data["scores"]
