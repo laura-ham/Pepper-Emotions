@@ -11,7 +11,7 @@ class FaceEmotion(object):
 		self.headers = {
 		# Request headers. Replace the placeholder key below with your subscription key.
 		'Content-Type': 'application/octet-stream',
-		'Ocp-Apim-Subscription-Key': 'YOUR KEY'',
+		'Ocp-Apim-Subscription-Key': 'YOUR KEY',
 		}
 
 		self.params = urllib.urlencode({
